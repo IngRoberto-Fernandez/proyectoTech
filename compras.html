@@ -210,6 +210,10 @@ function borrarItemCarrito(evento) {
   carrito = carrito.filter((carritoId) => {
       return carritoId !== id;
   });
+
+
+
+  
   // volvemos a renderizar
   renderizarCarrito();
   // Actualizamos el LocalStorage
