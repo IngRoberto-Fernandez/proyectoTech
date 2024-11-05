@@ -13,7 +13,7 @@
                             id: 2,
                             nombre: 'Sombrero vueltiao-machiembriao',
                             precio: 150000,
-                            imagen: 'assets/img/sombrero4.jpg',
+                            imagen: 'assets/img/sombrero4.jpeg',
                             categoria: 'sombreros'
                         },
                         {
