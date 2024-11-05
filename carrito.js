@@ -3,23 +3,48 @@
                     //Variables -base de datos
                     const baseDeDatos=[
                         {
-                            id:1,
-                            nombre: 'Sombrero vueltiao, hecho a mano, 23 vueltas',
+                            id: 1,
+                            nombre: 'Sombrero vueltiao con la bandera de Colombia, 23 vueltas',
                             precio: 250000,
-                            imagen: 'assets/img/feature_prod_02.jpg'
+                            imagen: 'assets/img/feature_prod_01.jpg',
+                            categoria: 'sombreros'
                         },
                         {
-                            id:3,
-                            nombre: 'Sombrero vueltiao',
-                            precio: 350000,
-                            imagen: 'assets/img/feature_prod_02.jpg'
+                            id: 2,
+                            nombre: 'Sombrero vueltiao-machiembriao',
+                            precio: 150000,
+                            imagen: 'assets/img/sombrero4.jpg',
+                            categoria: 'sombreros'
                         },
                         {
-                            id:2,
-                            nombre: 'Mochilas wayuu',
-                            precio: 50000,
-                            imagen: 'assets/img/feature_prod_03.jpg'
+                            id: 3,
+                            nombre: 'Sombrero vueltiao colombiano 15 vueltas tricolor',
+                            precio: 250000,
+                            imagen: 'assets/img/feature_prod_02.jpg',
+                            categoria: 'sombreros'
+                        },
+                        {
+                            id: 4,
+                            nombre: 'Mochila wayuu azul 6',
+                            precio: 120000,
+                            imagen: 'assets/img/shop_04.jpg',
+                            categoria: 'mochilas'
+                        },
+                        {
+                            id: 5,
+                            nombre: 'Bolso en fique',
+                            precio: 120000,
+                            imagen: 'assets/img/shop_03.jpg',
+                            categoria: 'bolsos'
+                        },
+                        {
+                            id: 6,
+                            nombre: 'Hamaca',
+                            precio: 120000,
+                            imagen: 'assets/img/category_img_02.jpg',
+                            categoria: 'hamacas'
                         }
+                
                     ];
                     let carrito = [];
                     const divisa = '$';
@@ -141,23 +166,7 @@
                     return total + miItem[0].precio;
                 }, 0).toFixed(2);
             }
-             // Obtén el contador del almacenamiento local
-let visitas = localStorage.getItem('contadorVisitas');
-
-// Si no hay visitas almacenadas, inicializa a 0
-if (!visitas) {
-    visitas = 0;
-}
-
-// Incrementa el contador
-visitas++;
-
-// Guarda el nuevo contador en el almacenamiento local
-localStorage.setItem('contadorVisitas', visitas);
-
-// Muestra el contador en la página
-document.getElementById('contador').textContent = visitas;
-
+               
 
 
               
