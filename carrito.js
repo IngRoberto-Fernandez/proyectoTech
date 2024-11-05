@@ -141,7 +141,23 @@
                     return total + miItem[0].precio;
                 }, 0).toFixed(2);
             }
-        
+             // Obtén el contador del almacenamiento local
+let visitas = localStorage.getItem('contadorVisitas');
+
+// Si no hay visitas almacenadas, inicializa a 0
+if (!visitas) {
+    visitas = 0;
+}
+
+// Incrementa el contador
+visitas++;
+
+// Guarda el nuevo contador en el almacenamiento local
+localStorage.setItem('contadorVisitas', visitas);
+
+// Muestra el contador en la página
+document.getElementById('contador').textContent = visitas;
+
 
 
               
