@@ -1,7 +1,7 @@
 
                 document.addEventListener('DOMContentLoaded',() =>{
                     //Variables -base de datos
-                    const baseDeDatos=[
+                    const baseDeDatos=[   
                         {
                             id: 1,
                             nombre: 'Sombrero vueltiao con la bandera de Colombia, 23 vueltas',
